@@ -73,7 +73,8 @@
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Exo:400,700" rel="stylesheet" />
+    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /> -->
 
     <!--
         
@@ -135,48 +136,107 @@
         It will not be rotated or scaled.
         
     -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-        <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
+    <div id="start" class="step slide center" data-x="-3000"
+         data-y="-1500">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+        <p class="big">Welcome!</p>
     </div>
 
-    <!--
-        
-        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-        
-        So in the example below it'll be `step-2`.
-        
-        The hash part of the url when this step is active will be `#/step-2`.
-        
-        You can also use `#step-2` in a link, to point directly to this particular step.
-        
-        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-        
-    -->
-    <div class="step slide" data-x="0" data-y="-1500">
-        <q>Don't you think that presentations given <strong>in modern browsers</strong> shouldn't <strong>copy the limits</strong> of 'classic' slide decks?</q>
+    <div id="bored" class="step slide" data-x="-1500" data-y="-1500">
+      <br/>
+      <br/>
+        <q><strong class="sbig">Oortle</strong><br/><em>almost</em> linearly scalable<br/>pub-sub system</q>
     </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+    <div id="whoami" class="step" data-x="0" data-y="-1500">
+    <h1>Me</h1>
+
+    <p>
+      <b>Gleb Peregud</b><br>
+      Senior developer at <a href="http://silversoft.pl">SilverSoft Sp. z o.o.</a>
+    </p>
+
+    <ul>
+      <li>Developer at <b><a href="http://livepress.com/">LivePress Inc.</a></b></li>
+      <li>Consultant at <b><a href="http://plurk.com/">Plurk</a></b></li>
+    </ul>
+
+    <ul>
+      <li>Email : <a href="mailto:gleber.p@gmail.com">gleber.p@gmail.com</a></li>
+      <li>Twitter : @gleber.p</li>
+    </ul>
+
     </div>
 
-    <!--
-        
-        This is an example of step element being scaled.
-        
-        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
-        element will be 4 times larger than the others.
-        From presentation and transitions point of view it means, that it will have to be scaled
-        down (4 times) to make it back to it's correct size.
-        
-    -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">then you should try</span>
-        <h1>impress.js<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> no rhyme intended</span>
+    <div id="goals" class="step" data-x="1500" data-y="-2000">
+        <h1 class="big">TOPICS</h1>
     </div>
+
+    <div id="goals2" class="step" data-x="1500" data-y="-1450"
+         data-rotate="90">
+      <ul>
+        <li> API </li>
+        <li> discoverability </li>
+        <li> performance </li>
+        <li> scalability </li>
+        <li> reliability </li>
+      </ul>
+    </div>
+
+    <div id="system" class="step huge center hidden" data-x="0" data-y="-300"
+         data-scale="4">
+      System
+    </div>
+
+    <div class="step big center system" data-x="800" data-y="900" data-rotate="90" data-scale="2">
+      Blog
+    </div>
+
+    <div class="step big center system" data-x="0" data-y="1400" data-rotate="180" data-scale="2">
+      LivePress
+    </div>
+
+    <div class="step big center system" data-x="-800" data-y="900" data-rotate="270" data-scale="2">
+      Oortle cloud
+    </div>
+
+    <div class="step big center system" data-x="0" data-y="400" data-rotate="360" data-scale="2">
+      Client's browser
+    </div>
+
+    <div id="system-overview" class="step center" data-x="0"
+         data-y="500" data-rotate="360" data-scale="4">
+    </div>
+
+    <div id="" class="step center hidden big" data-x="-500" data-y="1120"
+         data-scale="0.6" data-rotate="360">
+      <ul>
+        <li> Control node </li>
+        <li> Worker nodes </li>
+        <li> 
+          <ul class="small">
+            <li> Control node failover </li>
+            <li> Spare worker nodes </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+
+    <div id="goals2-back" class="step" data-x="1500" data-y="-1450" data-rotate="90">
+    </div>
+
+    <!-- <div id="title" class="step" data-x="0" data-y="1000" data-scale="4"> -->
+    <!--     <span class="try">then you should try</span> -->
+    <!--     <h1>impress.js<sup>*</sup></h1> -->
+    <!--     <span class="footnote"><sup>*</sup> no rhyme intended</span> -->
+    <!-- </div> -->
 
     <!--
         
@@ -186,7 +246,7 @@
         element should be rotated by 90 degrees clockwise.
         
     -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+    <div id="its" class="step" data-x="850" data-y="8000" data-rotate="90" data-scale="5">
         <p>It's a <strong>presentation tool</strong> <br/>
         inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
         and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
@@ -260,23 +320,6 @@
 
 </div>
 
-<!--
-    
-    Hint is not related to impress.js in any way.
-    
-    But it can show you how to use impress.js features in creative way.
-    
-    When the presentation step is shown (selected) it's element get's the class of "active" and `#impress` root
-    element get's the class based on active step id `step-ID` (where ID is the step id)... It probably is not
-    so clear because of all these IDs in here, so for example when the first step (the one with id of `bored`)
-    is active, `#impress` element get a class of `step-bored`.
-    
-    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation.
-    
--->
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate</p>
-</div>
 <script>
 if ("ontouchstart" in document.documentElement) { 
     document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";

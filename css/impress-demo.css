@@ -60,7 +60,7 @@ table {
 
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Exo', sans-serif;
     
     min-height: 740px;
 
@@ -113,7 +113,7 @@ body     { pointer-events: none; }
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
+    font-family: 'Exo', georgia, serif;
 
     font-size: 48px;
     line-height: 1.5;
@@ -130,58 +130,14 @@ body     { pointer-events: none; }
 }
 
 .step:not(.active) {
-    opacity: 0.3;
+    opacity: 0.2;
+}
+
+.hidden.step:not(.active) {
+    opacity: 0.01;
 }
 
 /* STEP SPECIFIC STYLES */
-
-/* hint on the first slide */
-
-.hint {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 200px;
-    
-    background: rgba(0,0,0,0.5);
-    color: #EEE;
-    text-align: center;
-    
-    font-size: 50px;
-    padding: 20px;
-    
-    z-index: 100;
-    
-    opacity: 0;
-    
-    -webkit-transform: translateY(400px);
-    -moz-transform:    translateY(400px);
-    -ms-transform:     translateY(400px);
-    -o-transform:      translateY(400px);
-    transform:         translateY(400px);
-
-    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
-    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
-    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
-    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
-    transition:         opacity 1s,         transform 0.5s 1s;
-}
-
-.step-bored + .hint {
-    opacity: 1;
-    
-    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s;
-    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s;
-    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s;
-    -o-transition:      opacity 1s 5s,      -o-transform 0.5s;
-    transition:         opacity 1s 5s,         transform 0.5s;
-    
-    -webkit-transform: translateY(0px);
-    -moz-transform:    translateY(0px);
-    -ms-transform:     translateY(0px);
-    -o-transform:      translateY(0px);
-    transform:         translateY(0px);
-}
 
 /* impress.js title */
 
@@ -214,6 +170,99 @@ body     { pointer-events: none; }
 
 #title .footnote {
     font-size: 32px;
+}
+
+#whoami {
+  width: 1000px;
+}
+
+#whoami h1 {
+  font-size: 2em;
+}
+
+.small {
+  font-size: 0.6em;
+}
+
+.sbig {
+  font-size: 3em;
+}
+
+.big {
+  font-size: 5em;
+}
+
+.huge {
+  font-size: 8em;
+}
+
+ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ul + ul {
+  margin-bottom: 0em;
+}
+
+.center {
+  text-align: center;
+}
+
+#goals {
+  
+}
+
+#impress.step-system-overview .system {
+  opacity: 1;
+}
+
+#goals2 {
+  font-size: 5em;
+}
+
+#impress.step-goals2-back #goals2 {
+  opacity: 1;
+}
+
+
+/* intro */
+#bored q {
+  text-align: center;
+}
+
+#bored em {
+  opacity: 0.1;
+  -webkit-transition: opacity 1.5s;
+  -moz-transition:    opacity 1.5s;
+  -ms-transition:     opacity 1.5s;
+  -o-transition:      opacity 1.5s;
+  transition:         opacity 1.5s;
+
+  -webkit-transition-delay: 2.5s;
+  -moz-transition-delay:    2.5s;
+  -ms-transition-delay:     2.5s;
+  -o-transition-delay:      2.5s;
+  transition-delay:         2.5s;
+}
+
+#bored:not(.active) em {
+  -webkit-transition: opacity 0s;
+  -moz-transition:    opacity 0s;
+  -ms-transition:     opacity 0s;
+  -o-transition:      opacity 0s;
+  transition:         opacity 0s;
+
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay:    0s;
+  -ms-transition-delay:     0s;
+  -o-transition-delay:      0s;
+  transition-delay:         0s;
+  opacity: 0.1;
+}
+
+#bored.active em {
+  opacity: 1;
 }
 
 /* big thoughts */
