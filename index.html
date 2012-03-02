@@ -151,7 +151,7 @@
     <div id="bored" class="step slide" data-x="-1500" data-y="-1500">
       <br/>
       <br/>
-        <q><strong class="sbig">Oortle</strong><br/><em>almost</em> linearly scalable<br/>pub-sub system</q>
+        <q><strong class="sbig">Oortle</strong><br/><em class="fadein">almost</em> linearly scalable<br/>pub-sub system</q>
     </div>
 
     <div id="whoami" class="step" data-x="0" data-y="-1500">
@@ -211,7 +211,7 @@
     </div>
 
     <div id="system-overview" class="step center" data-x="0"
-         data-y="500" data-rotate="360" data-scale="4">
+         data-y="900" data-rotate="360" data-scale="4">
     </div>
 
     <div id="" class="step center hidden big" data-x="-500" data-y="1120"
@@ -231,76 +231,182 @@
 
     <div id="goals2-back" class="step" data-x="1500" data-y="-1450" data-rotate="90">
     </div>
-
-    <!-- <div id="title" class="step" data-x="0" data-y="1000" data-scale="4"> -->
-    <!--     <span class="try">then you should try</span> -->
-    <!--     <h1>impress.js<sup>*</sup></h1> -->
-    <!--     <span class="footnote"><sup>*</sup> no rhyme intended</span> -->
-    <!-- </div> -->
-
-    <!--
-        
-        This element introduces rotation.
-        
-        Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
-        element should be rotated by 90 degrees clockwise.
-        
-    -->
-    <div id="its" class="step" data-x="850" data-y="8000" data-rotate="90" data-scale="5">
-        <p>It's a <strong>presentation tool</strong> <br/>
-        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+ 
+    <div id="api" class="step" data-x="1740" data-y="-1600"
+         data-rotate="90" data-scale="0.3">
+      <ul>
+        <li> WebSockets </li>
+        <li> Flash </li>
+        <li class="scriptcaller"> XMLHttpRequest with CORS </li>
+        <li class="scriptcaller"> ScriptTag long-polling </li>
+        <li> Webhooks </li>
+      </ul>      
     </div>
 
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+    <div id="websockets" class="step sbig hidden" data-x="1782" data-y="-1620"
+         data-rotate="90" data-scale="0.06">
+      Started with Misultin :(<br/>
+      <a href="http://github.com/gleber/proto_ws">ProtoWS</a>
+      at github.com/gleber
     </div>
 
-    <!--
-        
-        And now it gets really exiting! We move into third dimension!
-        
-        Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
-        `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
-        positioned far away from us (by 3000px).
-        
-    -->
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>and <b>tiny</b> ideas</p>
+    <div id="scriptcaller" class="step big hidden" data-x="1730" data-y="-1685"
+         data-rotate="90" data-scale="0.06">
+      <a href="http://github.com/LivePress/scriptcaller">ScriptCaller</a>
+      at github.com/LivePress
+    </div>
+    
+    <div id="discoverability" class="step" data-x="1690" data-y="-1300"
+         data-scale="0.2">
+      <strong>Discoverability</strong>
+      <ul>
+        <li> S3 <span class="fadein">for Oortle worker server list</span> </li>
+        <li> Zerigo <span class="fadein delay5">for dynamic DNS</span> </li>
+        <li> EC2 tags <span class="fadein delay10">for automatic instance management</span> </li>
+      </ul>      
+    </div>
+    
+    <div id="performance" class="step" data-x="1520" data-y="-1340"
+         data-scale="0.2">
+      <strong>Performance</strong>
+      <ul>
+        <li> Latency, latency, latency! <br/></li>
+        <li> Socket accept rate <br/> <span class="fadein">&nbsp;PITA for HTTP-based protocols</span> </li>
+        <li> Broadcast speed</li>
+        <li> Hardware issues <br/> <span class="fadein delay10"></span> </li>
+      </ul>      
     </div>
 
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+    <div class="step hidden" data-x="1500" data-y="-1365"
+         data-scale="0.05">EC2 cloud sucks at latency!</div>
+    
+    <div class="step" data-x="1530" data-y="-1364" data-rotate="-90" data-scale="0.05">MORE!
+      <ul>
+        <li>servers
+        <li>sockets
+        <li>acceptors
+      </ul>
     </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+    <div class="step" class="step" data-x="1520" data-y="-1240" data-scale="0.2">
+      <h3>Janus/Hot Wheels contest claimed by Cliff Moon</h3>
+      <strong>priority mangling is dangerous =><br/> accept time becomes unstable</strong>
     </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
+    <div class="step" class="step" data-x="1520" data-y="-1140" data-scale="0.2">
+      other things like real-time stats are helpful, but
+      non-essential. Make sure they are not taking too much
+      resources. Design it to be self-limiting
     </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
+    <div class="step" class="step" data-x="1520" data-y="-940" data-scale="0.5">
+      <h1>scalability</h1>
     </div>
 
-    <!--
-        
-        And the last one shows full power and flexibility of impress.js.
-        
-        You can not only position element in 3D, but also rotate it around any axis.
-        So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
-        10 degrees (clockwise) around Y axis.
-        
-        You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
-        as `data-rotate` (these two are basically aliases).
-        
-    -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
+    <div class="step center" class="step" data-x="1440" data-y="-850" data-scale="0.3">
+      <ul>
+        <li>minimising</li>
+        <li>provisioning</li>
+        <li>automatization</li>
+        <li>logging and debugging</li>
+        <li>tools</li>
+      </ul>
+    </div>
+
+    <div class="step hidden" class="step" data-x="1520" data-y="-890" data-scale="0.1">
+      <ul>
+        <li>any message flow
+        <li>broadcast messages
+        <li>auxiliary messages
+        <li>subscriber counts
+        <li>stats messages
+      </ul>
+    </div> 
+
+    <div class="step hidden center" class="step" data-x="1390" data-y="-868" data-scale="0.1">
+      <ul>
+        <li>up
+        <li>down
+        <li>limits</li>
+      </ul>
+    </div> 
+
+    <div class="step hidden center" class="step" data-x="1600" data-y="-850" data-scale="0.1">
+      <strong>Logging and debugging</strong>
+      <p> Single error does not matter!</p>
+      <p>Statistics matter - e.g. elevated error rate</p>
+      <p>There will be errors due to network, closed browsers, etc.</p>
+      <p>Watch out for elevated error rates!</p>    
+      <p>To debug: log levels, log filters, positive and negative</p>
+    </div> 
+
+    <div class="step hidden center" class="step" data-x="1440" data-y="-780" data-scale="0.1">
+      <ul>
+        <li> web panels aka dashboards
+        <li> CLI tools
+        <li> hot code upgrades
+        <li> and rollbacks!
+      </ul>
+    </div> 
+
+    
+
+    <div class="step" data-x="1173" data-y="-1690"
+         data-rotate="90" data-scale="0.3">
+      <ul>
+        <li> <strong>Message delivery</strong>
+        <li> reordering
+        <li> caching and resending with subscribe with message ID
+        <li> idempotency
+      </ul>
+    </div>
+
+    <div id="apcast" class="step" data-x="1173" data-y="-1690"
+         data-scale="0.4">
+      APCAST!
+    </div>
+
+    <div class="step hidden" data-x="970" data-y="-1650"
+         data-scale="0.4">
+      <ul>
+        <li>generic behaviour
+        <li>per topic
+        <li>message cache
+        <li>synchronization
+        <li>optimistic
+      </ul>
+    </div>
+
+    <div class="step hidden" data-x="970" data-y="-1600"
+         data-scale="0.4">
+      <ul><li>
+        <li>handles reordering
+        <li>per-sender ordering
+        <li>handles conflcits
+        <li>resends messages
+        <li>let it crash!
+      </ul>
+    </div>
+
+    <div class="step" data-x="950" data-y="-1890"
+         data-scale="0.4" data-rotate="180">
+      <ul>
+        <li><strong>fault tolerance</strong>
+        <li>nodes can and <em>will</em> crash
+        <li>automatic reconnect
+        <li>control node failover</li>
+        <li>spare worker nodes</li>
+    </div>
+    
+    <div id="authors" class="step" data-x="-2000" data-y="1000"
+         data-z="-100" data-scale="2">
+      <h1>Oortle authors</h1>
+      <ul>
+        <li> Gleb Peregud
+        <li> Joel Reymont
+        <li> Anton Fedorov
+        <li> Andrei Soroker
+      </ul>
     </div>
 
     <!--
@@ -315,7 +421,7 @@
         * `data-scale` -- defines the scale of step element; default value is 1
         
     -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    <div id="overview" class="step" data-x="0" data-y="0" data-scale="7">
     </div>
 
 </div>

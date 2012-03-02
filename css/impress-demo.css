@@ -176,7 +176,7 @@ body     { pointer-events: none; }
   width: 1000px;
 }
 
-#whoami h1 {
+h1 {
   font-size: 2em;
 }
 
@@ -205,6 +205,31 @@ ul + ul {
   margin-bottom: 0em;
 }
 
+
+div.step .fadein {
+  opacity: 0.1;
+  -webkit-transition: opacity 1.5s;
+  -webkit-transition-delay: 2.5s;
+}
+
+div.step:not(.active) .fadein {
+  -webkit-transition: opacity 0s;
+  -webkit-transition-delay: 0s;
+  opacity: 0.1;
+}
+
+div.step.active .fadein {
+  opacity: 1;
+}
+
+.fadein.delay5 {
+  -webkit-transition-delay: 5s !important;
+}
+
+.fadein.delay10 {
+  -webkit-transition-delay: 10s !important;
+}
+
 .center {
   text-align: center;
 }
@@ -225,45 +250,38 @@ ul + ul {
   opacity: 1;
 }
 
+#discoverability {
+  width: 1100px;
+}
+
+#scriptcaller {
+}
+
+#impress.step-scriptcaller .scriptcaller {
+  /* font-weight: bolder; */
+  opacity: 1 !important;
+}
 
 /* intro */
 #bored q {
   text-align: center;
 }
 
-#bored em {
-  opacity: 0.1;
-  -webkit-transition: opacity 1.5s;
-  -moz-transition:    opacity 1.5s;
-  -ms-transition:     opacity 1.5s;
-  -o-transition:      opacity 1.5s;
-  transition:         opacity 1.5s;
+/* #bored em { */
+/*   opacity: 0.1; */
+/*   -webkit-transition: opacity 1.5s; */
+/*   -webkit-transition-delay: 2.5s; */
+/* } */
 
-  -webkit-transition-delay: 2.5s;
-  -moz-transition-delay:    2.5s;
-  -ms-transition-delay:     2.5s;
-  -o-transition-delay:      2.5s;
-  transition-delay:         2.5s;
-}
+/* #bored:not(.active) em { */
+/*   -webkit-transition: opacity 0s; */
+/*   -webkit-transition-delay: 0s; */
+/*   opacity: 0.1; */
+/* } */
 
-#bored:not(.active) em {
-  -webkit-transition: opacity 0s;
-  -moz-transition:    opacity 0s;
-  -ms-transition:     opacity 0s;
-  -o-transition:      opacity 0s;
-  transition:         opacity 0s;
-
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay:    0s;
-  -ms-transition-delay:     0s;
-  -o-transition-delay:      0s;
-  transition-delay:         0s;
-  opacity: 0.1;
-}
-
-#bored.active em {
-  opacity: 1;
-}
+/* #bored.active em { */
+/*   opacity: 1; */
+/* } */
 
 /* big thoughts */
 
@@ -318,6 +336,11 @@ ul + ul {
     -o-transition-delay:      1.5s;
     transition-delay:         1.5s;
 }
+
+.rotate90 {
+  -webkit-transform: rotate(90deg);
+}
+
 
 #ing.active .rotating {
     -webkit-transform: rotate(-10deg);
