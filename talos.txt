@@ -1,0 +1,14 @@
+building scalabale applications with Erlang
+
+on example of pubsub systems
+
+Why Erlang?
+1) ease of prototyping
+2) soft real-time
+3) => low latency
+4) reliable
+5) fast enough
+
+Commentator for onet.pl (heavy loading done by Talos)
+Oortle
+WhatsApp.com
