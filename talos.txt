@@ -1,6 +1,6 @@
 building scalabale applications with Erlang
 
-on example of pubsub systems
+(case of pubsub systems)
 
 Why Erlang?
 1) ease of prototyping
@@ -10,5 +10,33 @@ Why Erlang?
 5) fast enough
 
 Commentator for onet.pl (heavy loading done by Talos)
+Oortle (cluster of )
+WhatsApp.com (tuned ejabberd - 2.8mln of users per machine)
+
+Commentator (Talos) case.
+* few authors - many subscribers
+* 1.5 mil of users
+* cluster consisting of 3 machines (flat)
+* load balancing is done via client
+* state is synchronized with Mnesia (2 stage commit)
+** scales up to 10 machines for this kind of load
+
 Oortle
+* more authors - many subscribers
+* up to 200 machines
+* up to 1 mln of users per machine
+* advanced load balancing
+* automatic cluster resizing
+* state is synchronized via custom protocol
+* there are 2 roles in cluster
+** control node
+** worker node
+
 WhatsApp.com
+* IM application
+** (many authors - many subscribers)
+* ejabberd
+* tuned up to 2.8 mil of users per machine
+
+More on Erlang
+Very cheap actors (~300bytes)
