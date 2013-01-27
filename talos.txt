@@ -38,5 +38,22 @@ WhatsApp.com
 * ejabberd
 * tuned up to 2.8 mil of users per machine
 
-More on Erlang
-Very cheap actors (~300bytes)
+Erlang part.
+
+Erlang was not designed to
+* process text efficiently
+* crunch numbers at lightning speed
+* run in browser
+Erlang was designed to
+* run concurrent tasks
+* run programs that never stop
+** => 99.999% uptime (4 minutes of downtime per year)
+
+Methods of achieving such reliability
+* think "protocols"
+* unit of isolation is a process
+* let it crash (OTP, supervision trees)
+* COP - concurrency oriented programming
+** it is easy to step outside of your single processor - 
+   the world is concurrent just as your single processor Erlang programm
+
