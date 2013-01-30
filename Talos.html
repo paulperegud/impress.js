@@ -634,7 +634,6 @@ div.step.active .fadein {
          data-rotate="90">
       <ul>
         <li> API </li>
-        <li> discoverability </li>
         <li> performance </li>
         <li> scalability </li>
         <li> reliability </li>
@@ -647,7 +646,7 @@ div.step.active .fadein {
     </div>
 
     <div class="step big center system" data-x="800" data-y="900" data-rotate="90" data-scale="2">
-      Event
+      Events
     </div>
 
     <div class="step big center system" data-x="0" data-y="1400" data-rotate="180" data-scale="2">
@@ -685,10 +684,10 @@ div.step.active .fadein {
     <div id="goals2-back" class="step" data-x="1500" data-y="-1450" data-rotate="90">
     </div>
 
-    <div id="api" class="step" data-x="1740" data-y="-1600"
+    <div id="api" class="step" data-x="1685" data-y="-1600"
          data-rotate="90" data-scale="0.3">
       <ul>
-        <li> SockJS </li>
+        <li> <a href="http://github.com/sockjs">SockJS</a> </li>
         <li class="sockjs"> websocket </li>
         <li class="sockjs"> xhr-streaming </li>
         <li class="sockjs"> jsonp-polling </li>
@@ -696,7 +695,7 @@ div.step.active .fadein {
       </ul>
     </div>
 
-    <div id="websockets" class="step sbig hidden" data-x="1782" data-y="-1620"
+    <div id="websockets" class="step sbig hidden" data-x="1730" data-y="-1640"
          data-rotate="90" data-scale="0.06">
       Heavily optimized / rewritten <br/>
       ~10 times faster <br/>
@@ -704,23 +703,7 @@ div.step.active .fadein {
       Will be published some day
     </div>
 
-    <!-- <div id="scriptcaller" class="step big hidden" data-x="1730" data-y="-1685" -->
-    <!--      data-rotate="90" data-scale="0.06"> -->
-    <!--   <a href="http://github.com/LivePress/scriptcaller">ScriptCaller</a> -->
-    <!--   at github.com/LivePress -->
-    <!-- </div> -->
-
-    <!-- <div id="discoverability" class="step" data-x="1690" data-y="-1300" -->
-    <!--      data-scale="0.2"> -->
-    <!--   <strong>Discoverability</strong> -->
-    <!--   <ul> -->
-    <!--     <li> S3 <span class="fadein">for Oortle worker server list</span> </li> -->
-    <!--     <li> Zerigo <span class="fadein delay5">for dynamic DNS</span> </li> -->
-    <!--     <li> EC2 tags <span class="fadein delay10">for automatic instance management</span> </li> -->
-    <!--   </ul> -->
-    <!-- </div> -->
-
-    <div id="performance" class="step" data-x="1520" data-y="-1340"
+    <div id="performance" class="step" data-x="1600" data-y="-1340"
          data-scale="0.2">
       <strong>Performance</strong>
       <ul>
@@ -734,7 +717,7 @@ div.step.active .fadein {
     <!-- <div class="step hidden" data-x="1500" data-y="-1365" -->
     <!--      data-scale="0.05">EC2 cloud sucks at latency!</div> -->
 
-    <div class="step" data-x="1530" data-y="-1364" data-rotate="-90" data-scale="0.05">MORE!
+    <div class="step" data-x="1615" data-y="-1364" data-rotate="-90" data-scale="0.05">MORE!
       <ul>
         <li>servers
         <li>sockets
@@ -742,12 +725,12 @@ div.step.active .fadein {
       </ul>
     </div>
 
-    <div class="step" class="step" data-x="1520" data-y="-1240" data-scale="0.2">
+    <div class="step" class="step" data-x="1600" data-y="-1240" data-scale="0.2">
       <h3>Janus/Hot Wheels contest claimed by Cliff Moon</h3>
       <strong>priority mangling is dangerous =><br/> accept time becomes unstable</strong>
     </div>
 
-    <div class="step" class="step" data-x="1520" data-y="-1140" data-scale="0.2">
+    <div class="step" class="step" data-x="1600" data-y="-1140" data-scale="0.2">
       other things like real-time stats are helpful, but
       non-essential. Make sure they are not taking too much
       resources. Design it to be self-limiting
@@ -760,7 +743,6 @@ div.step.active .fadein {
     <div class="step center" class="step" data-x="1440" data-y="-850" data-scale="0.3">
       <ul>
         <li>minimising</li>
-        <li>provisioning</li>
         <li>automatization</li>
         <li>logging and debugging</li>
         <li>tools</li>
@@ -777,7 +759,7 @@ div.step.active .fadein {
       </ul>
     </div>
 
-    <div class="step hidden center" class="step" data-x="1390" data-y="-868" data-scale="0.1">
+    <div class="step hidden center" class="step" data-x="1380" data-y="-860" data-scale="0.1">
       <ul>
         <li>up
         <li>down
@@ -794,7 +776,7 @@ div.step.active .fadein {
       <p>To debug: log levels, log filters, positive and negative</p>
     </div>
 
-    <div class="step hidden center" class="step" data-x="1440" data-y="-780" data-scale="0.1">
+    <div class="step hidden center" class="step" data-x="1440" data-y="-795" data-scale="0.1">
       <ul>
         <li> web panels aka dashboards
         <li> CLI tools
@@ -832,7 +814,7 @@ div.step.active .fadein {
          data-scale="0.4">
       <ul><li>
         <li>not suited for:
-        <li>big number of nodes
+        <li>large number of nodes
         <li>big data
         <li>high volume of transactions
       </ul>

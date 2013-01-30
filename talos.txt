@@ -1,4 +1,4 @@
-building scalabale applications with Erlang
+Building scalabale applications with Erlang
 
 (case of pubsub systems)
 
@@ -15,11 +15,11 @@ WhatsApp.com (tuned ejabberd - 2.8mln of users per machine)
 
 Commentator (Talos) case.
 * few authors - many subscribers
-* 1.5 mil of users
+* up to 1.5 mil of users
 * cluster consisting of 3 machines (flat)
 * load balancing is done via client
 * state is synchronized with Mnesia (2 stage commit)
-** scales up to 10 machines for this kind of load
+** scales up to 10 machines for this type of load
 
 Oortle
 * more authors - many subscribers
@@ -54,6 +54,12 @@ Methods of achieving such reliability
 * unit of isolation is a process
 * let it crash (OTP, supervision trees)
 * COP - concurrency oriented programming
-** it is easy to step outside of your single processor - 
-   the world is concurrent just as your single processor Erlang programm
+** it is easy to step outside of your single processor -
+   the world is concurrent just as your single processor Erlang program
 
+
+Socket accept rate
+There is a lock on OS for single socket. And it is not possible
+to use more then one core to accept connection on single socket.
+
+To utilize more cores you need to listen on more then one socket.
