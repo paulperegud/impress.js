@@ -613,7 +613,7 @@ div.step.active .fadein {
     <p>
       <b>Paul Peregud</b><br>
       Senior developer at <a href="http://silversoft.pl">SilverSoft Sp. z o.o.</a>,<br/>
-      contractor for Onet S.A.
+      tech lead of Talos project for Onet S.A.
     </p>
 
     <ul>
@@ -698,12 +698,13 @@ div.step.active .fadein {
     <div id="websockets" class="step sbig hidden" data-x="1730" data-y="-1640"
          data-rotate="90" data-scale="0.06">
       Heavily optimized / rewritten <br/>
-      ~10 times faster <br/>
+       ~10 times faster <br/>
       No more latency issues <br/>
+      Mobile clients <br/>
       Will be published some day
     </div>
 
-    <div id="performance" class="step" data-x="1600" data-y="-1340"
+    <div id="performance" class="step" data-x="1600" data-y="-1320"
          data-scale="0.2">
       <strong>Performance</strong>
       <ul>
@@ -714,10 +715,7 @@ div.step.active .fadein {
       </ul>
     </div>
 
-    <!-- <div class="step hidden" data-x="1500" data-y="-1365" -->
-    <!--      data-scale="0.05">EC2 cloud sucks at latency!</div> -->
-
-    <div class="step" data-x="1615" data-y="-1364" data-rotate="-90" data-scale="0.05">MORE!
+    <div class="step" data-x="1615" data-y="-1344" data-rotate="-90" data-scale="0.05">MORE!
       <ul>
         <li>servers
         <li>sockets
@@ -725,12 +723,14 @@ div.step.active .fadein {
       </ul>
     </div>
 
-    <div class="step" class="step" data-x="1600" data-y="-1240" data-scale="0.2">
-      <h3>Janus/Hot Wheels contest claimed by Cliff Moon</h3>
-      <strong>priority mangling is dangerous =><br/> accept time becomes unstable</strong>
+    <div class="step" class="step" data-x="1600" data-y="-1200" data-scale="0.2">
+      <h3>Broadcast speed</h3>
+      1.1s latency for 500k users<br/>for message of size 500b<br/>
+      <strong>priority mangling is dangerous =><br/>
+        accept time becomes unstable</strong>
     </div>
 
-    <div class="step" class="step" data-x="1600" data-y="-1140" data-scale="0.2">
+    <div class="step" class="step" data-x="1600" data-y="-1100" data-scale="0.2">
       other things like real-time stats are helpful, but
       non-essential. Make sure they are not taking too much
       resources. Design it to be self-limiting
@@ -767,12 +767,12 @@ div.step.active .fadein {
       </ul>
     </div>
 
-    <div class="step hidden center biggish" class="step" data-x="1600" data-y="-850" data-scale="0.1">
+    <div class="step hidden center" class="step" data-x="1600" data-y="-850" data-scale="0.1">
       <strong>Logging and debugging</strong>
       <p>Single error does not matter!</p>
-      <p>Statistics matter - e.g. elevated error rate</p>
-      <p>Watch out for elevated error rates!</p>
-      <p>OOB logging</p>
+      <p>Statistics matter - watch out for elevated error rate!</p>
+      <p>Logging may be expensive</p>
+      <p>Out-Of-Band logging</p>
     </div>
 
     <div class="step hidden center" class="step" data-x="1440" data-y="-795" data-scale="0.1">
@@ -794,7 +794,7 @@ div.step.active .fadein {
       </ul>
     </div>
 
-    <div id="apcast" class="step" data-x="1173" data-y="-1690"
+    <div id="mnesia" class="step" data-x="1173" data-y="-1690"
          data-scale="0.4">
       Mnesia
     </div>
@@ -803,8 +803,8 @@ div.step.active .fadein {
          data-scale="0.4">
       <ul>
         <li>distributed database
-        <li>2 phase commit
-        <li>scales up to 10 nodes
+        <li>2 phase commit:
+        <li>&nbsp;scales up to 10 nodes
         <li>low volume of transactions
       </ul>
     </div>
