@@ -10,7 +10,7 @@ Why Erlang?
 5) fast enough
 
 Commentator for onet.pl (heavy loading done by Talos)
-Oortle (cluster of )
+Oortle (big cluster of erlang nodes)
 WhatsApp.com (tuned ejabberd - 2.8mln of users per machine)
 
 Commentator (Talos) case.
