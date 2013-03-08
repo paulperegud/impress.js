@@ -757,6 +757,7 @@ div.step.active .fadein {
 
     <div class="step center" class="step" data-x="1440" data-y="-850" data-scale="0.3">
       <ul>
+	<li>SMP</li>
         <li>minimising</li>
         <li>automatization</li>
         <li>logging and debugging</li>
@@ -764,7 +765,34 @@ div.step.active .fadein {
       </ul>
     </div>
 
-    <div class="step hidden" class="step" data-x="1520" data-y="-890" data-scale="0.1">
+    <div class="step hidden" class="step" data-x="1380" data-y="-895" data-scale="0.1">
+      <ul>
+	<li>pubsub-with-history</li>
+        <li>single process pubsub</li>
+        <li>public ets</li>
+        <li>next step?</li>
+      </ul>
+    </div>
+
+    <div class="step hidden" class="step" data-x="1310" data-y="-895" data-scale="0.05">
+      <ul>
+	<li>named public ets per scheduler
+	<li>phash2(id(), n)
+	<li>up to 300k subscribes per second!
+      </ul>
+    </div>
+
+    <div class="step center" class="step" data-x="1440" data-y="-850" data-scale="0.3">
+      <ul>
+	<li>SMP</li>
+        <li>minimising</li>
+        <li>automatization</li>
+        <li>logging and debugging</li>
+        <li>tools</li>
+      </ul>
+    </div>
+
+    <div class="step hidden" class="step" data-x="1520" data-y="-880" data-scale="0.1">
       <ul>
         <li>any message flow
         <li>broadcast messages
@@ -774,7 +802,7 @@ div.step.active .fadein {
       </ul>
     </div>
 
-    <div class="step hidden center" class="step" data-x="1380" data-y="-860" data-scale="0.1">
+    <div class="step hidden center" class="step" data-x="1380" data-y="-850" data-scale="0.1">
       <ul>
         <li>up
         <li>down
@@ -782,7 +810,17 @@ div.step.active .fadein {
       </ul>
     </div>
 
-    <div class="step hidden center" class="step" data-x="1600" data-y="-850" data-scale="0.1">
+    <div class="step center" class="step" data-x="1440" data-y="-850" data-scale="0.3">
+      <ul>
+	<li>SMP</li>
+        <li>minimising</li>
+        <li>automatization</li>
+        <li>logging and debugging</li>
+        <li>tools</li>
+      </ul>
+    </div>
+
+    <div class="step hidden center" class="step" data-x="1570" data-y="-820" data-scale="0.1">
       <strong>Logging and debugging</strong>
       <p>Single error does not matter!</p>
       <p>Statistics matter - watch out for elevated error rate!</p>
@@ -790,7 +828,7 @@ div.step.active .fadein {
       <p>Out-Of-Band logging</p>
     </div>
 
-    <div class="step hidden center" class="step" data-x="1440" data-y="-795" data-scale="0.1">
+    <div class="step hidden center" class="step" data-x="1440" data-y="-785" data-scale="0.1">
       <ul>
         <li> web panels aka dashboards
         <li> CLI tools
@@ -818,20 +856,20 @@ div.step.active .fadein {
          data-scale="0.4">
       <ul>
 	<li>Cons:</li>
-	<li>* It's not magic :)</li>
+	<li>- It's not magic :)</li>
 	<li>Pros:</li>
-	<li>* zero configuration</li>
-	<li>* blazing fast reads using mnesia:fun/2</li>
+	<li>- zero configuration</li>
+	<li>- blazing fast reads using mnesia:fun/2</li>
       </ul>
     </div>
 
-    <div class="step hidden" data-x="970" data-y="-1600"
+    <div class="step hidden" data-x="970" data-y="-1580"
          data-scale="0.4">
-      <ul><li>
-        <li>not suited for:
-        <li>large number of nodes
-        <li>big data
-        <li>high volume of transactions
+      Unanswered questions:<br/>
+      <ul>
+	<li>removing dead node from cluster
+	<li>network split
+	<li>limit of scaling for single writer scenario
       </ul>
     </div>
 
