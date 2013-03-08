@@ -604,7 +604,7 @@ div.step.active .fadein {
     <div id="bored" class="step slide" data-x="-1500" data-y="-1500">
       <br/>
       <br/>
-        <q><strong class="biggish">Scaling with Erlang</strong><br/><em class="fadein">Talos, a rather large pub-sub system</q>
+        <q><strong class="biggish">Scaling with Erlang</strong><br/><em class="fadein">Building a large pubsub-with-history system</q>
     </div>
 
     <div id="whoami" class="step" data-x="0" data-y="-1500">
@@ -697,11 +697,28 @@ div.step.active .fadein {
 
     <div id="websockets" class="step sbig hidden" data-x="1730" data-y="-1640"
          data-rotate="90" data-scale="0.06">
-      Heavily optimized / rewritten <br/>
-       ~10 times faster <br/>
-      No more latency issues <br/>
-      Mobile clients <br/>
-      Will be published some day
+      up to 100k per node<br/>
+      latency long tail (>60s)<br/>
+    </div>
+
+    <div id="websockets2" class="step sbig hidden" data-x="1730" data-y="-1590"
+         data-rotate="90" data-scale="0.06">
+      Our rewrite:<br/>
+      <ul>
+	<li>1 active process per client (every protocol)
+	<li>avoid multiple encoding of same data
+	<li>mobile clients
+      </ul>
+    </div>
+
+    <div id="websockets3" class="step sbig hidden" data-x="1730" data-y="-1540"
+         data-rotate="90" data-scale="0.06">
+      Results:<br/>
+      <ul>
+	<li>no lock congestion on timers
+	<li>up to 700k per node
+	<li>stable, low latency
+      </ul>
     </div>
 
     <div id="performance" class="step" data-x="1600" data-y="-1320"
@@ -726,8 +743,6 @@ div.step.active .fadein {
     <div class="step" class="step" data-x="1600" data-y="-1200" data-scale="0.2">
       <h3>Broadcast speed</h3>
       1.1s latency for 500k users<br/>for message of size 500b<br/>
-      <strong>priority mangling is dangerous =><br/>
-        accept time becomes unstable</strong>
     </div>
 
     <div class="step" class="step" data-x="1600" data-y="-1100" data-scale="0.2">
@@ -802,10 +817,11 @@ div.step.active .fadein {
     <div class="step hidden" data-x="970" data-y="-1650"
          data-scale="0.4">
       <ul>
-        <li>distributed database
-        <li>2 phase commit:
-        <li>&nbsp;scales up to 10 nodes
-        <li>low volume of transactions
+	<li>Cons:</li>
+	<li>* It's not magic :)</li>
+	<li>Pros:</li>
+	<li>* zero configuration</li>
+	<li>* blazing fast reads using mnesia:fun/2</li>
       </ul>
     </div>
 

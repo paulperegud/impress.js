@@ -57,9 +57,41 @@ Methods of achieving such reliability
 ** it is easy to step outside of your single processor -
    the world is concurrent just as your single processor Erlang program
 
-
 Socket accept rate
 There is a lock on OS for single socket. And it is not possible
 to use more then one core to accept connection on single socket.
 
 To utilize more cores you need to listen on more then one socket.
+
+
+Mnesia - quite good when you use it for intended purpose
+Pros:
+* zero configuration
+* blazing fast reads using mnesia:fun/2
+Unanswered questions:
+* removing dead node from cluster
+* network split (think different cities/countries/continents)
+* limit of scaling for single writer scenario
+
+Pubsub-with-history in SMP setting
+1) single pubsub process, guarding ets
+  -> subscribes are too slow
+2) direct access to ets (e.g. gproc)
+  -> fast enough
+  -> watch out for duplicates!
+3) next step
+  -> named public ets per scheduler
+  -> phash2(pid(), n)
+  -> up to 300k subscribes per second!
+
+SockJS
+* latency long tail (>60s)
+* up to 100k per node
+* lock congestion
+
+Our rewrite:
+* 1 active process per client (every protocol)
+** no lock congestion on timers
+* avoid multiple encoding of same data
+* up to 700k per node
+* stable, low latency
